@@ -17,7 +17,7 @@ class ViewModel: ObservableObject {
     @Published var avaliableMoviments: [Int]?
     
     var isFirst: Bool = false
-    var isTurn: Bool = false
+    @Published var isTurn: Bool = false
     var isWinner: Bool = false
     
     var neighBorOfSelected: [Int?]?    

@@ -173,6 +173,21 @@
                   endingLineNumber = "117"
                   offsetFromSymbolStart = "420">
                </Location>
+               <Location
+                  uuid = "1EFC86B4-F86B-4F7A-9D57-AFE182ADF57A - 584cdaf132a61705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Foundation.Data) -&gt; () in SocketProject.NetworkRepository.setSubscriptions() -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Repository/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "440">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

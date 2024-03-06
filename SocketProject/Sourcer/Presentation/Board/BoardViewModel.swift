@@ -51,6 +51,7 @@ extension ViewModel: BoardViewModelProtocol {
         let move = Move(moveFrom: nil, moveTo: nil, removed: nil, endGame: nil, retartGame: true)
         repository.sendMove(move)
         viewState = .inGame
+        startGame()
     }
     
     func selectPiece(_ newPieceIndex: Int) {
@@ -140,6 +141,7 @@ extension ViewModel: BoardViewModelProtocol {
         if let isRestarting = move.retartGame {
             if isRestarting {
                 viewState = .inGame
+                startGame()
             }
         }
     }
