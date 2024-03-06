@@ -18,9 +18,12 @@ protocol NetworkRepositoryProtocol {
     
     var statePublisher: PassthroughSubject<ConnectionState, Never> { get set }
     var chatMessagePublisher: PassthroughSubject<ChatMessage, Never> { get set }
+    var movePublisher: PassthroughSubject<Move, Never> { get set }
     
     func connect()
     func clientSendMessage(_ message: ChatMessage)
+    
+    func sendMove(_ move: Move)
 }
 
 class NetworkRepository: NetworkRepositoryProtocol {
@@ -41,6 +44,7 @@ class NetworkRepository: NetworkRepositoryProtocol {
     
     var statePublisher = PassthroughSubject<ConnectionState, Never>()
     var chatMessagePublisher = PassthroughSubject<ChatMessage, Never>()
+    var movePublisher = PassthroughSubject<Move, Never>()
         
     required init(
         clientUDP: any ClientUDPProtocol,
@@ -52,6 +56,21 @@ class NetworkRepository: NetworkRepositoryProtocol {
         self.clientMapper = clientMappeer
         
         setSubscriptions()
+    }
+    
+    func sendMove(_ move: Move) {
+        do {
+            let data = try move.encodeToJson()
+            client.sendMessage(data) { hasSent in
+                if hasSent {
+                    print("Envio feito com Sucesso!")
+                } else {
+                    print("Deu Ruim Enviar!")
+                }
+            }
+        } catch {
+            print(error)
+        }
     }
     
     func connect() {
@@ -88,20 +107,43 @@ class NetworkRepository: NetworkRepositoryProtocol {
             .store(in: &cancellables)
         
         self.client.messagePublisher
-            .sink { data in
-                if let content = String(data: data, encoding: .utf8) {
-                    let newMessage = ChatMessage(
-                        sender: .remoteUser,
-                        content: content
-                    )
-                    self.chatMessagePublisher.send(newMessage)
+            .sink { [weak self] data in
+                
+                do {
+                    let move = try Move.decodeFromJson(data: data)
+                    self?.movePublisher.send(move)
+                } catch {
+                    print(error)
+                    if let content = String(data: data, encoding: .utf8) {
+                        if let status = MessagesType(rawValue: content) {
+                            switch status {
+                            case .START_GAME:
+                                self?.statePublisher.send(.connectionReady)
+                            case .FIRST_TO_CONNECT:
+                                self?.statePublisher.send(.waitingConnection)
+                            }
+                        } else {
+                            let newMessage = ChatMessage(
+                                sender: .remoteUser,
+                                content: content
+                            )
+                            self?.chatMessagePublisher.send(newMessage)
+                        }
+                    }
                 }
+                
+                
             }
             .store(in: &cancellables)
     }
 }
 
 extension NetworkRepository {
+    enum MessagesType: String {
+        case START_GAME
+        case FIRST_TO_CONNECT
+    }
+    
     enum CommunicationPorts: String {
         case broker = "1050"
         case tcpServer = "1100"

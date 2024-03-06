@@ -11,7 +11,6 @@
 		FF84C6352B8D8F4F008E9B0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84C6342B8D8F4F008E9B0A /* ContentView.swift */; };
 		FF84C6372B8D8F50008E9B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF84C6362B8D8F50008E9B0A /* Assets.xcassets */; };
 		FF84C63A2B8D8F50008E9B0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF84C6392B8D8F50008E9B0A /* Preview Assets.xcassets */; };
-		FF84C6472B8D91D3008E9B0A /* ServerTCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84C6462B8D91D3008E9B0A /* ServerTCP.swift */; };
 		FF84C64A2B8D91F4008E9B0A /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84C6492B8D91F4008E9B0A /* NetworkProtocols.swift */; };
 		FF84C64C2B8E547F008E9B0A /* ClientTCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84C64B2B8E547F008E9B0A /* ClientTCP.swift */; };
 		FF84C64E2B8F9C6A008E9B0A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84C64D2B8F9C6A008E9B0A /* ViewModel.swift */; };
@@ -24,6 +23,9 @@
 		FF84C6652B93A682008E9B0A /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF84C6642B93A682008E9B0A /* Network.framework */; };
 		FFC128DF2B9653750043E0D5 /* ClientUDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC128DE2B9653750043E0D5 /* ClientUDP.swift */; };
 		FFC128E12B978A490043E0D5 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC128E02B978A490043E0D5 /* BoardView.swift */; };
+		FFC128E42B9822DE0043E0D5 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC128E32B9822DE0043E0D5 /* BoardViewModel.swift */; };
+		FFC128E72B98AE3F0043E0D5 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC128E62B98AE3F0043E0D5 /* UIApplicationExtension.swift */; };
+		FFC128E92B98B28B0043E0D5 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC128E82B98B28B0043E0D5 /* Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,6 @@
 		FF84C6362B8D8F50008E9B0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF84C6392B8D8F50008E9B0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF84C63B2B8D8F50008E9B0A /* SocketProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocketProject.entitlements; sourceTree = "<group>"; };
-		FF84C6462B8D91D3008E9B0A /* ServerTCP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTCP.swift; sourceTree = "<group>"; };
 		FF84C6492B8D91F4008E9B0A /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
 		FF84C64B2B8E547F008E9B0A /* ClientTCP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTCP.swift; sourceTree = "<group>"; };
 		FF84C64D2B8F9C6A008E9B0A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		FF84C6642B93A682008E9B0A /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.2.sdk/System/Library/Frameworks/Network.framework; sourceTree = DEVELOPER_DIR; };
 		FFC128DE2B9653750043E0D5 /* ClientUDP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientUDP.swift; sourceTree = "<group>"; };
 		FFC128E02B978A490043E0D5 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		FFC128E32B9822DE0043E0D5 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		FFC128E62B98AE3F0043E0D5 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		FFC128E82B98B28B0043E0D5 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +140,9 @@
 		FF84C6452B8D8FE5008E9B0A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FFC128E22B9822C60043E0D5 /* Board */,
 				FF84C65A2B90EE6F008E9B0A /* Connection */,
 				FF84C6612B92CFCE008E9B0A /* ChatView.swift */,
-				FFC128E02B978A490043E0D5 /* BoardView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -147,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				FF84C64B2B8E547F008E9B0A /* ClientTCP.swift */,
-				FF84C6462B8D91D3008E9B0A /* ServerTCP.swift */,
 				FFC128DE2B9653750043E0D5 /* ClientUDP.swift */,
 			);
 			path = Network;
@@ -156,6 +159,7 @@
 		FF84C6562B90E994008E9B0A /* Sourcer */ = {
 			isa = PBXGroup;
 			children = (
+				FFC128E52B98AE240043E0D5 /* Utils */,
 				FF84C6572B90EB56008E9B0A /* Entity */,
 				FF84C6422B8D8F91008E9B0A /* Services */,
 				FF84C6442B8D8FD9008E9B0A /* Repository */,
@@ -169,6 +173,7 @@
 			children = (
 				FF84C6582B90EB66008E9B0A /* ConnectionState.swift */,
 				FF84C65F2B92CB69008E9B0A /* Message.swift */,
+				FFC128E82B98B28B0043E0D5 /* Move.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -205,6 +210,23 @@
 				FF84C6642B93A682008E9B0A /* Network.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFC128E22B9822C60043E0D5 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				FFC128E02B978A490043E0D5 /* BoardView.swift */,
+				FFC128E32B9822DE0043E0D5 /* BoardViewModel.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		FFC128E52B98AE240043E0D5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFC128E62B98AE3F0043E0D5 /* UIApplicationExtension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,20 +299,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC128E92B98B28B0043E0D5 /* Move.swift in Sources */,
 				FF84C6552B902E8D008E9B0A /* ConnectionStateMapper.swift in Sources */,
 				FF84C6592B90EB66008E9B0A /* ConnectionState.swift in Sources */,
 				FF84C6502B9022BE008E9B0A /* Repository.swift in Sources */,
 				FF84C64A2B8D91F4008E9B0A /* NetworkProtocols.swift in Sources */,
 				FF84C6622B92CFCE008E9B0A /* ChatView.swift in Sources */,
 				FF84C6352B8D8F4F008E9B0A /* ContentView.swift in Sources */,
+				FFC128E72B98AE3F0043E0D5 /* UIApplicationExtension.swift in Sources */,
 				FF84C6332B8D8F4F008E9B0A /* SocketProjectApp.swift in Sources */,
 				FFC128E12B978A490043E0D5 /* BoardView.swift in Sources */,
 				FF84C6602B92CB69008E9B0A /* Message.swift in Sources */,
 				FF84C6532B902E5F008E9B0A /* DomainEntityMapper.swift in Sources */,
-				FF84C6472B8D91D3008E9B0A /* ServerTCP.swift in Sources */,
 				FF84C64E2B8F9C6A008E9B0A /* ViewModel.swift in Sources */,
 				FF84C64C2B8E547F008E9B0A /* ClientTCP.swift in Sources */,
 				FFC128DF2B9653750043E0D5 /* ClientUDP.swift in Sources */,
+				FFC128E42B9822DE0043E0D5 /* BoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

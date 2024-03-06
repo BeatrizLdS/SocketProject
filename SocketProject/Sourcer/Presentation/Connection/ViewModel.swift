@@ -13,14 +13,22 @@ class ViewModel: ObservableObject {
     @Published var messages: [ChatMessage] = []
     @Published var inputUser: String = ""
     @Published var boardSpaces: [Int] = Array(repeating: 1, count: 33)
-    @Published var selectedPeace: Int?
+    @Published var selectedPiace: Int?
+    @Published var avaliableMoviments: [Int]?
     
+    var isFirst: Bool = false
+    var isTurn: Bool = false
+    var isWinner: Bool = false
+    
+    var neighBorOfSelected: [Int?]?    
     
     private var connectionState: ConnectionState? {
         didSet {
             switch connectionState {
             case .waitingConnection:
                 viewState = .waitingPlayer
+                isTurn = true
+                isFirst = true
             case .serverReady:
                 viewState = .waitingPlayer
             case .connectionReady:
@@ -32,7 +40,7 @@ class ViewModel: ObservableObject {
             }
         }
     }
-    private var repository: any NetworkRepositoryProtocol
+    var repository: any NetworkRepositoryProtocol
     private var cancellables = Set<AnyCancellable>()
     
     init(repository: any NetworkRepositoryProtocol) {
@@ -65,6 +73,11 @@ class ViewModel: ObservableObject {
                 self.messages.append(newMessage)
             }
             .store(in: &cancellables)
+        
+        repository.movePublisher.sink { [weak self] move in
+            self?.receiveMove(move)
+        }
+        .store(in: &cancellables)
     }
 }
 
@@ -74,5 +87,6 @@ extension ViewModel {
         case loading
         case waitingPlayer
         case inGame
+        case endGame
     }
 }

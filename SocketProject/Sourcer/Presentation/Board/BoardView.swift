@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct BoardView: View {
-    @Binding var board: [Int]
-    @Binding var selectedPeace: Int?
+    @ObservedObject var viewModel: ViewModel
     @State private var peaceRadius: CGFloat?
         
     var body: some View {
@@ -21,74 +20,55 @@ struct BoardView: View {
                     HStack (alignment: .center) {
                         let rate = row > 1 && row < 5 ? 7 : 3
                         ForEach (0..<rate) { col in
-                            let counter = getCounter(
+                            let counter = viewModel.getCurrentSpaceInBoard(
                                 row: row,
                                 col: col,
                                 rate: rate)
-                            getSpace(counter, hasPiece: board[counter])
+                            getSpace(counter, hasPiece: viewModel.boardSpaces[counter])
                                 .frame(width: peaceRadius, height: peaceRadius)
                                 .padding(5)
-                                .onTapGesture {
-                                    selectedPeace = counter
-                                }
                         }
-                    
                     }
                 }
             }
             .onAppear{
                 getPeaceRadius(width: width, height: height)
-                board[16] = 0
+                viewModel.startGame()
             }
             .frame(width: width, height: height)
         }
     }
     
-    func getCounter(row: Int, col: Int, rate: Int) -> Int {
-        var value = 0
-        if row < 2 {
-            value = (row * rate) + col
-        } else if rate == 7 {
-            let factor = (row - 1)
-            value = col + (rate * factor) - 1
-        } else {
-            let factor = row - 5
-            value = (7 * 4 - 1) + (col) + (factor * rate)
-            print(value)
-        }
-        return value
-    }
-    
     func getSpace(_ currentSpace: Int, hasPiece: Int) -> some View {
         if hasPiece == 1 {
+            let color: Color = currentSpace == viewModel.selectedPiace ? Color.blue : Color.teal
             return AnyView(
                 Circle()
-                    .fill(currentSpace == selectedPeace ? Color.blue : Color.teal)
+                    .fill(color)
+                    .onTapGesture {
+                        if viewModel.isTurn {
+                            viewModel.selectPiece(currentSpace)                            
+                        }
+                    }
             )
+        }
+        var color: Color = Color.teal.opacity(0.2)
+        if let contains = viewModel.avaliableMoviments?.contains(currentSpace), contains {
+            color = .green
         }
         return AnyView(
             Circle()
-                .fill(Color.teal.opacity(0.2))
+                .fill(color)
                 .overlay {
                     Circle()
                         .stroke(Color.gray, lineWidth: 5)
                 }
+                .onTapGesture {
+                    withAnimation {
+                        viewModel.moveTo(currentSpace)
+                    }
+                }
         )
-    }
-    
-    func peace() -> some View {
-        Circle()
-            .fill(Color.teal)
-    }
-    
-    func emptyPlace() -> some View {
-        Circle()
-            .fill(Color.teal.opacity(0.2))
-            .overlay {
-                Circle()
-                    .stroke(Color.gray, lineWidth: 5)
-            }
-
     }
     
     func getPeaceRadius(width: CGFloat, height: CGFloat) {
@@ -100,7 +80,9 @@ struct BoardView: View {
 
 #Preview {
     BoardView(
-        board: .constant(Array(repeating: 1, count: 33)),
-        selectedPeace: .constant(5)
+        viewModel: ViewModel(repository: NetworkRepository(
+            clientUDP: ClientUDP(),
+            client: ClientTCP(),
+            clientMappeer: ClientStateMapper()))
     )
 }
