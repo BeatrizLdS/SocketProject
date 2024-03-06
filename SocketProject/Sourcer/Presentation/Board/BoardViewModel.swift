@@ -95,7 +95,7 @@ extension ViewModel: BoardViewModelProtocol {
         let hasWin = hasWin()
         isWinner = hasWin
         if hasWin {
-            viewState = .endGame            
+            viewState = .endGame
         }
         
         let currentMove = Move(
@@ -132,7 +132,9 @@ extension ViewModel: BoardViewModelProtocol {
         }
         
         if let hasLose = move.endGame {
-            viewState = .endGame
+            if hasLose {
+                viewState = .endGame                
+            }
         }
         
         if let isRestarting = move.retartGame {
