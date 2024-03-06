@@ -19,6 +19,9 @@ struct ChatView: View {
                 chat
             }
             .padding(8)
+            .onTapGesture {
+                UIApplication.shared.endEditing()
+            }
             
             HStack {
                 TextField("Type here", text: $text)
@@ -27,9 +30,14 @@ struct ChatView: View {
                     .background(Color.gray.opacity(0.2))
                     .cornerRadius(10)
                     .shadow(color: .black.opacity(0.25) ,radius: 5)
+                    .onSubmit {
+                        action()
+                        UIApplication.shared.endEditing()
+                    }
                 
                 Button {
                     action()
+                    UIApplication.shared.endEditing()
                 } label: {
                     Image(systemName: "paperplane.circle.fill")
                         .resizable()

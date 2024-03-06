@@ -18,29 +18,49 @@ struct ContentView: View {
     @State var text: String = ""
         
     var body: some View {
-        VStack {
-            switch viewModel.viewState {
-            case .notStarted :
-                Button {
-                    viewModel.start()
-                } label: {
-                    Text("Start")
+        GeometryReader { geometry in
+            VStack {
+                switch viewModel.viewState {
+                case .notStarted :
+                    Button {
+                        viewModel.start()
+                    } label: {
+                        Text("Start")
+                    }
+                case .loading:
+                    ProgressView()
+                case .waitingPlayer:
+                    Text("Esperando outro jogador")
+                case .inGame:
+                    VStack {
+                        BoardView(
+                            viewModel: viewModel
+                        )
+                        .background(Color.white)
+                        ChatView(
+                            text: $viewModel.inputUser,
+                            messages: $viewModel.messages) {
+                                viewModel.sendMessage()
+                            }
+                    }
+                    .overlay(alignment: .topTrailing) {
+                        Button {
+                            viewModel.playAgain()
+                        } label: {
+                            Text("Play again")
+                        }
+                    }
+                case .endGame:
+                    Text(viewModel.isWinner ? "You Win" : "You Lose")
+                    Button {
+                        viewModel.playAgain()
+                    } label: {
+                        Text("Play again")
+                    }
                 }
-            case .loading:
-                ProgressView()
-            case .waitingPlayer:
-                Text("Esperando outro jogador")
-            case .inGame:
-                BoardView(
-                    board: $viewModel.boardSpaces,
-                    selectedPeace: $viewModel.selectedPeace
-                )
-//                ChatView(
-//                    text: $viewModel.inputUser,
-//                    messages: $viewModel.messages) {
-//                        viewModel.sendMessage()
-//                    }
             }
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .background(Color.white)
         }
     }
 }

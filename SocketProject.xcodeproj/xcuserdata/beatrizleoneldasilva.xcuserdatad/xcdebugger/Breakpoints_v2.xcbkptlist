@@ -128,5 +128,212 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1EFC86B4-F86B-4F7A-9D57-AFE182ADF57A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocketProject/Sourcer/Repository/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "setSubscriptions()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1EFC86B4-F86B-4F7A-9D57-AFE182ADF57A - 584cdaf132a61705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Foundation.Data) -&gt; () in SocketProject.NetworkRepository.setSubscriptions() -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Repository/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "1EFC86B4-F86B-4F7A-9D57-AFE182ADF57A - 584cdaf132a61705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Foundation.Data) -&gt; () in SocketProject.NetworkRepository.setSubscriptions() -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Repository/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "420">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11BD3989-764F-45EA-AE0B-5626662B9BF2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "receiveMove(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "11BD3989-764F-45EA-AE0B-5626662B9BF2 - e27ec59035e4d9da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketProject.ViewModel.receiveMove(SocketProject.Move) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  uuid = "11BD3989-764F-45EA-AE0B-5626662B9BF2 - e27ec59035e4d9da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketProject.ViewModel.receiveMove(SocketProject.Move) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "11BD3989-764F-45EA-AE0B-5626662B9BF2 - e27ec59035e4d9f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketProject.ViewModel.receiveMove(SocketProject.Move) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "552">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E82B4054-4E97-442E-8DF9-DFC73330B8A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "hasWin()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E82B4054-4E97-442E-8DF9-DFC73330B8A1 - e27ec59035e4de01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketProject.ViewModel.receiveMove(SocketProject.Move) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "E82B4054-4E97-442E-8DF9-DFC73330B8A1 - 368a24bc006640f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketProject.ViewModel.hasWin() -&gt; Swift.Bool"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E37E9A43-5DD7-4A83-8BA6-E6C4781189EF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "moveTo(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E37E9A43-5DD7-4A83-8BA6-E6C4781189EF - 51e95dd96437666"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketProject.ViewModel.moveTo(Swift.Int) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1256">
+               </Location>
+               <Location
+                  uuid = "E37E9A43-5DD7-4A83-8BA6-E6C4781189EF - 51e95dd96437666"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketProject.ViewModel.moveTo(Swift.Int) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Presentation/Board/BoardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
