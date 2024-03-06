@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "81A6B854-C52B-4FDC-A6FC-A5C26B81AFCD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EED4ABDC-1BD6-45CB-B5AF-8126A1F708CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocketProject/Sourcer/Services/Network/ServerTCP.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "receiveMessage(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EED4ABDC-1BD6-45CB-B5AF-8126A1F708CE - 358aa47af63a1149"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Dispatch.DispatchData&gt;, Swift.Optional&lt;Network.NWConnection.ContentContext&gt;, Swift.Bool, Swift.Optional&lt;Network.NWError&gt;) -&gt; () in SocketProject.ServerTCP.receiveMessage() -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Services/Network/ServerTCP.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "EED4ABDC-1BD6-45CB-B5AF-8126A1F708CE - 108e1e4ec946c412"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Network.NWConnection.ContentContext&gt;, Swift.Bool, Swift.Optional&lt;Network.NWError&gt;) -&gt; () in SocketProject.ServerTCP.receiveMessage(for: Network.NWConnection) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Services/Network/ServerTCP.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "EED4ABDC-1BD6-45CB-B5AF-8126A1F708CE - 108e1e4ec946c412"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Network.NWConnection.ContentContext&gt;, Swift.Bool, Swift.Optional&lt;Network.NWError&gt;) -&gt; () in SocketProject.ServerTCP.receiveMessage(for: Network.NWConnection) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Services/Network/ServerTCP.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "EED4ABDC-1BD6-45CB-B5AF-8126A1F708CE - 108e1e4ec946c412"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Network.NWConnection.ContentContext&gt;, Swift.Bool, Swift.Optional&lt;Network.NWError&gt;) -&gt; () in SocketProject.ServerTCP.receiveMessage(for: Network.NWConnection) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Services/Network/ServerTCP.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "EED4ABDC-1BD6-45CB-B5AF-8126A1F708CE - 108e1e4ec946c412"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Network.NWConnection.ContentContext&gt;, Swift.Bool, Swift.Optional&lt;Network.NWError&gt;) -&gt; () in SocketProject.ServerTCP.receiveMessage(for: Network.NWConnection) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Services/Network/ServerTCP.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "EED4ABDC-1BD6-45CB-B5AF-8126A1F708CE - 108e1e4ec946c412"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Network.NWConnection.ContentContext&gt;, Swift.Bool, Swift.Optional&lt;Network.NWError&gt;) -&gt; () in SocketProject.ServerTCP.receiveMessage(for: Network.NWConnection) -&gt; ()"
+                  moduleName = "SocketProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beatrizleoneldasilva/Faculdade/11/PPD/Projeto%20Sockets/SwiftCode/SocketProject/SocketProject/Sourcer/Services/Network/ServerTCP.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6494174-E47F-496A-9BDD-20B91B5099EF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocketProject/Sourcer/Services/Network/ServerTCP.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "startServer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
