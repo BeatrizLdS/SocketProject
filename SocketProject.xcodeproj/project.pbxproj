@@ -87,7 +87,7 @@
 			children = (
 				FF84C6512B90263A008E9B0A /* Info.plist */,
 				FF84C63B2B8D8F50008E9B0A /* SocketProject.entitlements */,
-				FF84C6562B90E994008E9B0A /* Sourcer */,
+				FF84C6562B90E994008E9B0A /* Source */,
 				FF84C6412B8D8F6A008E9B0A /* App */,
 				FF84C6432B8D8FA2008E9B0A /* Resouces */,
 				FF84C6382B8D8F50008E9B0A /* Preview Content */,
@@ -156,7 +156,7 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		FF84C6562B90E994008E9B0A /* Sourcer */ = {
+		FF84C6562B90E994008E9B0A /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				FFC128E52B98AE240043E0D5 /* Utils */,
@@ -165,7 +165,7 @@
 				FF84C6442B8D8FD9008E9B0A /* Repository */,
 				FF84C6452B8D8FE5008E9B0A /* Presentation */,
 			);
-			path = Sourcer;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		FF84C6572B90EB56008E9B0A /* Entity */ = {
