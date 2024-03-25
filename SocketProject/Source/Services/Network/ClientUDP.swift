@@ -17,7 +17,7 @@ class ClientUDP: ClientUDPProtocol {
     
     func discoverServer(port: String, completion: @escaping (Result<Data, Error>) -> Void) {
         let discoveryAddress = NWEndpoint.hostPort(
-            host: NWEndpoint.Host("192.168.0.7"),
+            host: NWEndpoint.Host("127.0.0.1"),
             port: NWEndpoint.Port(port)!
         )
         let parameter = NWParameters.udp
